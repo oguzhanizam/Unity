@@ -41,6 +41,7 @@ public class Player : MonoBehaviour{
             StopCoroutine(firingCoroutine);
         }
     }
+    
 
     IEnumerator FireContinuously()
     {
