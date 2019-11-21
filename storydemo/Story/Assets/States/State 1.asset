@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb28c3c19d6ab84d8b01a310ea2269d, type: 3}
+  m_Name: State 1
+  m_EditorClassIdentifier: 
+  storySectionTitle: SAMPLE SECTION TITLE
+  storyText: 'SAMPLE SECTION STATE 1 STORY TEXT
+
+
+    1) GO TO STATE 2
+
+    2) GO TO STARTING STATE'
+  nextStates:
+  - {fileID: 11400000, guid: d46cd816ec1ab8946911b31f1ac74c1e, type: 2}
+  - {fileID: 11400000, guid: 1a41c2712532b8041972f823b7acb011, type: 2}

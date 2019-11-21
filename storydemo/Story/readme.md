@@ -1,0 +1,1 @@
+Hikaye yönlendirme temeline dayanan, adı konulmamış oyun projesi demosu
