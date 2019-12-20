@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ball\Ball.cs" />
     <Compile Include="Assets\Scripts\Block\Block.cs" />
+    <Compile Include="Assets\Scripts\Core\GameSession.cs" />
     <Compile Include="Assets\Scripts\Core\LoseCollider.cs" />
     <Compile Include="Assets\Scripts\Core\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Level\Level.cs" />
