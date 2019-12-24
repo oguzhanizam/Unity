@@ -132,3 +132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 16eaa477476447c479143a37a87c6cb5, type: 3}
+  blockDestroyVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+  maxHits: 3
+  hitSprites:
+  - {fileID: 21300000, guid: 9eeb4acce5735d748963849274958d0f, type: 3}
+  - {fileID: 21300000, guid: 199d2f6b3ddb3f14f98df9b376380bfa, type: 3}
+  timesHit: 0

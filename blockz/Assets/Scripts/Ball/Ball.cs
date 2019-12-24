@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
@@ -12,6 +9,7 @@ public class Ball : MonoBehaviour
     float unitWidth = 16f;
     float unitHeight = 10f;
 
+    float randomFactor = .2f;
 
     // Eşlemeler
     [SerializeField] Paddle paddle1;
@@ -61,11 +59,13 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Vector2 tweak = new Vector2(Random.Range(0f, randomFactor), Random.Range(0f, randomFactor));
         if (hasStarted)
         {
             //GetComponent<AudioSource>().Play();
-            AudioClip clip = ballCollisionSounds[UnityEngine.Random.Range(0, ballCollisionSounds.Length)];
+            AudioClip clip = ballCollisionSounds[Random.Range(0, ballCollisionSounds.Length)];
             audioSource.PlayOneShot(clip);
+            rb.velocity += tweak;
             //AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
         }
     }

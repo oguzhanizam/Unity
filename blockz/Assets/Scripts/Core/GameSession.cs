@@ -13,6 +13,8 @@ public class GameSession : MonoBehaviour
     [SerializeField] public int redBlockPoint = 25;
     [SerializeField] public int greenBlockPoint = 50;
 
+    [SerializeField] public bool isAutoplayEnable;
+
     Block block;
 
     private void Awake()
@@ -44,5 +46,10 @@ public class GameSession : MonoBehaviour
     public void ResetGame()
     {
         Destroy(gameObject);
+    }
+
+    public bool isAutoPlay()
+    {
+        return isAutoplayEnable;
     }
 }
